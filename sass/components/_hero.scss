@@ -1,0 +1,41 @@
+.hero {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.14;
+    text-decoration: none;
+    background: url("/goit-markup-hw-04/images/background.jpg");
+    color: $secondaryFontColor;
+    width: 1600px;
+    margin: auto;
+    & h1 {
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 60px;
+        padding-top: 200px;
+        padding-bottom:30px; 
+        width: 696px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+    }
+    &_button {
+        display: inline;
+        justify-content: center;
+        text-align: center;
+        width: 200px;
+        height: 50px;
+        background: $backgroundColor;
+        color: $secondaryFontColor;
+        margin-bottom: 200px;
+        font-style: normal;
+        border: 0;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        cursor: pointer;
+    }
+}

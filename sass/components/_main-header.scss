@@ -1,0 +1,97 @@
+.main-header {
+    height: 80px;
+    display: flex;
+    border-bottom: solid 1px #ECECEC;
+    background: var(--background-first);
+    &_container {
+        display: flex;
+    }
+    &_logo {
+        font-weight: 700;
+        text-decoration: none;
+        color: $primaryFontColor;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;  
+    }
+    & span {
+        color: #2196F3;
+    }
+    &_nav {
+        display: flex;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;     
+    }
+    &_menu {
+        display: flex;
+        margin-left: 93px;
+    }
+    &_nav-item {
+        margin-right: 46px;
+        display: inline;
+    }
+    &_link {
+        font-style: normal;
+        text-decoration: none;
+        color: $primaryFontColor;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        justify-content: space-between;
+        align-items: center;
+        &--current {
+            color: var(--hover-color);
+        }
+    }
+    &_underline {
+        position: absolute;
+        border-radius: 2px;
+        width: 53px;
+        height: 4px;
+        margin-top: 48px;
+        background: #2196F3;
+    }
+    &_nav-item:hover a,
+    &_nav-item:focus a {
+        color: var(--focus-color);
+        color: var(--hover-color);
+    }
+
+    &_contact {
+        display: flex;
+        margin-left: auto;
+        margin-right: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_contact-item {
+        margin-left: 50px;
+        
+    }
+    &_contact-item a {
+        font-style: normal;
+        text-decoration: none;
+        color: var(--contact-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        fill: var(--contact-color);
+        & svg {
+            margin-right: 10px;
+        }
+    
+    }
+   
+    &_contact-item:hover a {
+        color: var(--hover-color);
+        fill: var(--hover-color);
+    }   
+}
+
+

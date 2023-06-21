@@ -1,0 +1,44 @@
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    
+    &_list {
+        display: flex;
+        justify-content: center;
+        
+       
+    }
+    &_list-item {
+        margin-right: 30px;
+         & p {
+        justify-content: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #757575;
+        max-width: fit-content;
+        letter-spacing: 0.03em;
+    }
+    & h4 {
+        margin-bottom: 10px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;  
+    }
+    }
+   
+    &_list-pic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: 120px;
+        background: #F5F4FA;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+}

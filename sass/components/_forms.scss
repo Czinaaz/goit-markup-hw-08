@@ -1,0 +1,141 @@
+.forms {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin: unset;
+    padding: 0;
+    &_title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $primaryFontColor;
+        padding-bottom: 12px;
+    }
+    &_item {
+        display: flex;
+        flex-direction: column;
+        margin: unset;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: #757575;
+        margin-bottom: 10px;   
+    }
+    &_item-line {
+        display: flex;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    & a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: #757575;
+        margin-bottom: 4px;
+    }
+    & input {
+        border: unset;
+        margin: unset;
+        outline: unset;
+        padding-left: 42px;
+        font-size: 16px;
+        width: 448px;
+        height: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:focus {
+            border: 1px solid #2196f3;
+        }
+    }
+    &_svg {
+        margin: 11px 12px;
+        justify-content: center;
+        position: absolute;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        fill: #212121;
+    }
+    
+    &_item :focus + &_svg {
+        fill: #2196F3;
+    }
+    &_comment {
+        display: flex;
+        flex-direction: column;
+        margin: unset;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: #757575;
+        & a {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.01em;
+            color: #757575;
+            margin-bottom: 4px;
+        }
+        & textarea {
+            width: 448px;
+            height: 120px;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            outline: none;
+            resize: none;
+            padding: 16px 12px 16px 12px;
+            margin-bottom: 20px;
+        }
+    }
+    &_policy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: #757575;
+        & span {
+            color: $backgroundColor;
+            text-decoration: underline;
+        }
+    }
+    &_check-item {
+        margin-right: 8px;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        border: 2px solid $primaryFontColor;
+        fill: $secondaryFontColor;
+        
+    }
+    &_checkbox:checked + &_check-item {
+        fill: $secondaryFontColor;
+        border:1px solid $backgroundColor;
+        background: $backgroundColor;
+    }
+    &_submit-button {
+        color: $secondaryFontColor;
+        background-color: $backgroundColor;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        width: 200px;
+        height: 50px;
+        border: 0;
+        cursor: pointer;
+        margin: auto;
+    }
+}

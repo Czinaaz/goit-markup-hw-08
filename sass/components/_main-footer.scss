@@ -1,0 +1,148 @@
+.main-footer {
+    background: var(--background-third);
+    display: flex;
+    color: $secondaryFontColor;
+    height: 252px;
+    &_container {
+        display: flex;
+    }
+   
+    & h4 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        }
+
+    //--Left--// 
+    &_left{
+        display: block;
+        margin-top: 60px;
+        margin-right: 70px;
+    }
+    &_logo {
+        font-weight: 700;
+        text-decoration: none;
+        color: $secondaryFontColor;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;  
+    }
+    &_logo span {
+        color: #2196F3;
+    }
+    &_item {
+        display: block;
+        margin-bottom: 9px;
+    }
+    &_address {
+        margin-top: 20px;  
+    }
+    &_address-place {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        padding-top: 9px;
+    }
+    &_address-item {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        cursor: pointer;
+        padding-top: 9px;
+    }
+    &_address-item:hover {
+        color: var(--hover-color);
+    }
+
+    //--Center--//
+    &_center {
+        display: block;
+        margin-top: 72px;
+        margin-right: 78px;
+    }
+    &_icon-list {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;   
+    }
+    &_icon-list-item {
+        width: 44px;
+        height: 44px;
+    }
+    &_icon {
+        fill: $secondaryFontColor;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+
+    }
+    &_icon:hover {
+        border-radius: 50%;
+        fill: $secondaryFontColor;
+        background-color: var(--hover-color);
+        
+    }
+
+    //--Right--//
+    &_right {
+        display: block;
+        margin-top: 72px;
+    }
+    &_newsletter {
+        margin-top: 20px;
+    }
+    &_input {
+        font-family: inherit;
+        height: 50px;
+        width: 358px;
+        border-radius: 4px;
+        background-color: #2F303A;
+        border: 1px solid #FFFFFF4D; 
+        color: #FFFFFF;
+        outline: none;
+        margin-right: 10px;
+        padding-left: 10px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    &_button {
+        height: 50px;
+        width: 200px;
+        background: $backgroundColor;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        color: $secondaryFontColor;
+        fill: $secondaryFontColor;
+        border: 0;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    &_send {
+        vertical-align: middle;
+        fill: $secondaryFontColor;
+    }
+   
+   
+    
+
+
+}

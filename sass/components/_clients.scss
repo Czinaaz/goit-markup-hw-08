@@ -1,0 +1,28 @@
+.clients {
+    display: block;
+    &_head {
+        display: flex;
+        justify-content: center;
+        font-size: 36px;
+        font-weight: 700;
+        max-width: fit-content;
+        align-items: stretch;
+        padding-bottom: 50px; 
+        margin: auto;
+    }
+    &_list {
+        display: flex;
+        justify-content: center;  
+    }
+    &_list-item {
+        margin-right: 30px;
+        cursor: pointer;
+        border: 1px solid #AFB1B8;
+        fill: #AFB1B8;
+    }  
+    &_list-item:hover {
+        border: 1px solid var(--hover-color);
+        fill: var(--hover-color);
+    }
+ 
+}
