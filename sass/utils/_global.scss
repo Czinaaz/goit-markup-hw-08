@@ -1,8 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
 
 *,
@@ -37,8 +36,17 @@ h2 {
     padding-bottom: 94px;
 }
 .container {
-    width: 1200px;
-    margin:  auto;
+    max-width: 480px;
+    width: 100%;
+    margin: auto;
+    
+    @include tablet {
+        max-width: 760px;
+    }
+    @include desktop {
+        max-width: 1200px;
+    }
+
 }
 
 :hover,
