@@ -5,21 +5,34 @@
     font-size: 16px;
     line-height: 1.14;
     text-decoration: none;
-    background: url("/goit-markup-hw-04/images/background.jpg");
+    background: url("/goit-markup-hw-08/images/background-mini.jpg");
     color: $secondaryFontColor;
-    width: 1600px;
     margin: auto;
+    @include tablet {
+        display: block;
+        background: url("/goit-markup-hw-08/images/background-middle.jpg");
+        
+    }
+    @include desktop {
+        display: block;
+        background: url("/goit-markup-hw-04/images/background.jpg");
+    }
     & h1 {
-        font-size: 44px;
+        font-size: 26px;
         font-weight: 900;
         line-height: 60px;
-        padding-top: 200px;
+        padding-top: 118px;
         padding-bottom:30px; 
-        width: 696px;
+        width: 365px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: auto;
+        @include desktop {
+            font-size: 44px;
+            width: 696px;
+            padding-top: 200px;
+        }
 
     }
     &_button {
@@ -30,12 +43,15 @@
         height: 50px;
         background: $backgroundColor;
         color: $secondaryFontColor;
-        margin-bottom: 200px;
+        margin-bottom: 118px;
         font-style: normal;
         border: 0;
         font-weight: 700;
         font-size: 16px;
         line-height: 30px;
         cursor: pointer;
+        @include desktop {
+            margin-bottom: 200px;
+        }
     }
 }

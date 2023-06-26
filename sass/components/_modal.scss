@@ -1,15 +1,16 @@
 .modal {
     top: 50%;
     left: 50%;
-    width: 528px;
+    width: 95%;
     height: 581px;
     z-index: 2;
     transform: translate(-50%,-50%);
-    min-height: 581px;
+    min-height: 95%;
     background-color: #FFFFFF;
     border-radius: 4px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 40px;
+    padding: 20px;
+    flex-shrink: 0;
     &_btn-svg {
         justify-content: center;
         position: absolute;
@@ -21,7 +22,23 @@
         cursor: pointer;
         border: 1px solid rgba(0, 0, 0, 0.1);
         padding: 5px;
+        
     }
-    
+    @include tablet {
+        top: 50%;
+        left: 50%;
+        width: 528px;
+        height: 581px;
+        min-height: 581px;
+        padding: 40px;
+    }
+    @include desktop {
+        top: 50%;
+        left: 50%;
+        width: 528px;
+        height: 581px;
+        min-height: 581px;
+        padding: 40px;
+    }
 }
 

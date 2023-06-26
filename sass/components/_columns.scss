@@ -1,10 +1,26 @@
 .columns {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @include desktop {
+        display: flex;
+        flex-wrap: wrap;
+    }
     
     &_list {
-        display: flex;
-        justify-content: center;
+        display: block;
+        align-items: center;
+        
+        @include tablet {
+            display: flex;
+        }
+        @include desktop {
+            display: flex;
+            justify-content: center;
+        }
         
        
     }
@@ -19,6 +35,16 @@
         color: #757575;
         max-width: fit-content;
         letter-spacing: 0.03em;
+        @include tablet {
+            justify-content: center;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #757575;
+            max-width: fit-content;
+            letter-spacing: 0.03em;
+        }
     }
     & h4 {
         margin-bottom: 10px;

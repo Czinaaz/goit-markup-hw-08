@@ -5,7 +5,22 @@
     background: var(--background-first);
     &_container {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
+    &_button {
+        display: flex;
+        justify-content: space-between;
+        background-color: transparent;
+        border: none;
+        margin-left: auto;
+        margin-right: 10px;
+        @include tablet { 
+            display: none;
+        }
+    }
+
+
     &_logo {
         font-weight: 700;
         text-decoration: none;
@@ -15,20 +30,33 @@
         font-weight: 700;
         font-size: 26px;
         line-height: 31px;
-        letter-spacing: 0.03em;  
+        letter-spacing: 0.03em; 
+        margin-left: 10px;
+        @include tablet {
+            margin-left: 15px;
+        } 
     }
     & span {
         color: #2196F3;
     }
     &_nav {
         display: flex;
-        margin-right: auto;
         justify-content: center;
         align-items: center;     
     }
     &_menu {
-        display: flex;
+        display: none;
         margin-left: 93px;
+        margin-right: auto;
+        @include tablet {
+            display: flex;
+            justify-content: center;
+            margin-right: auto;
+        }
+        @include desktop {
+            display: flex;
+            justify-content: center;
+        }
     }
     &_nav-item {
         margin-right: 46px;
@@ -63,11 +91,21 @@
     }
 
     &_contact {
-        display: flex;
+        display: none;
         margin-left: auto;
         margin-right: 0;
         justify-content: space-between;
-        align-items: center;
+       
+        @include tablet {
+            display: block;
+            margin-left: auto;
+        }
+        @include desktop {
+            display: flex;
+            margin-right: 0;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
     &_contact-item {
         margin-left: 50px;
