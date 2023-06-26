@@ -1,9 +1,6 @@
 @use "./utils/vars.scss" as*;
 @use "./utils/colors.scss" as*;
-@import "./utils/mixins.scss";
-@import "./utils/global.scss";
-
-///
+@import "./global/global.scss";
 @import "./components/main-header.scss";
 @import "./components/hero.scss";
 @import "./components/columns.scss";
@@ -14,9 +11,7 @@
 @import "./components/modal.scss";
 @import "./components/forms.scss";
 @import "./components/button-menu.scss";
-@import "./components/image-list.scss";
-@import "./components/mobile-menu.scss";
-
+@import "./components/image-list";
 
 
 

@@ -1,9 +1,8 @@
 .main-footer {
     background: var(--background-third);
-    display: none;
+    display: flex;
     color: $secondaryFontColor;
     height: 252px;
-    
     &_container {
         display: flex;
     }

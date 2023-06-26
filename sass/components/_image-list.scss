@@ -1,11 +1,10 @@
 .image-list {
-    display: none;
+    display: flex;
     flex-wrap:wrap;
     list-style:inside;
     padding: unset;
     margin: unset;
     gap: 30px;
-    
     
     &_text {
         border-bottom: 1px solid #EEEEEE;

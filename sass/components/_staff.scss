@@ -1,8 +1,8 @@
 .staff {
-    display: none;
+    display: block;
     align-items: center;
     justify-content: center;
-    &_container {
+    &_section {
         background-color: #F5F4FA
     }
     &_head {

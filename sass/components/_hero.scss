@@ -1,17 +1,14 @@
 .hero {
-    display: none;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.14;
+    text-decoration: none;
     background: url("/goit-markup-hw-04/images/background.jpg");
-    
-    &_container {
-        color: $secondaryFontColor;
-        margin: auto;
-        display: block;
-        justify-content: center;
-        text-align: center;
-        font-size: 16px;
-        line-height: 1.14;
-        text-decoration: none;
-    }
+    color: $secondaryFontColor;
+    width: 1600px;
+    margin: auto;
     & h1 {
         font-size: 44px;
         font-weight: 900;

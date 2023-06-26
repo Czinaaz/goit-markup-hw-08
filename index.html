@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework_1</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
-    <title>Homework_1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.min.css" type="text/css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,23 +13,9 @@
   <body lang="pl">
     <header class="main-header">
       <div class="container main-header_container">
-        <a class="main-header_logo" href="./index.html"><span>Web</span>Studio</a>
-        <button class="main-header_menu-list js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg
-            width="30"
-            height="30"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-        </svg>
-        </button>
+        
         <div class="main-header_nav">       
+          <a class="main-header_logo" href="./index.html"><span>Web</span>Studio</a>
           <menu class="main-header_menu">
               <li class=" main-header_nav-item">
                 <a class="main-header_link--current" href="./index.html"><div class="main-header_underline"></div>Agencja</a>
@@ -42,9 +28,8 @@
               </li>
           </menu>
         </div>
-        <div class="main-header_contacts">
-          <ul class="main-header_contact-list">
-            <li class="main-header_contact-list-item">
+        <ul class="main-header_contact">
+            <li class="main-header_contact-item">
               
                 <a href="#">
                   <svg width="16" height="12">
@@ -52,14 +37,15 @@
                 </svg>info@devstudio.com</a>
               
             </li>
-            <li class="main-header_contact-list-item">
+            <li class="main-header_contact-item">
+                  
                 <a href="tel:48111111111">
                   <svg  width="16" height="12">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>+48 111 111 111</a>
+              </div>
             </li>
-          </ul>
-        </div>
+        </ul>
       </div>
     </header>    
 
@@ -67,10 +53,8 @@
       <!--HERO-->
 
       <div class="hero">
-        <div class="container hero_container">
             <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
             <button class="hero_button button" type="button" data-modal-open>Zamów usługe</button>
-        </div>
       </div>
       
       <!--OPIS-->
@@ -172,8 +156,8 @@
 
       <!--O NAS-->
 
-    <section class="section ">
-      <div class="container staff_container">
+    <section class="section staff_section">
+      <div class="container">
         <div class="staff">
           <div>
             <h2 class="staff_head">Nasz zespół</h2>
@@ -316,27 +300,27 @@
                 <p>UI Designer</p>
                 
                 <ul class="staff_icon-list">
-                  <li class="staff_icon-list_item">
+                  <li class="staff_icon-list-item">
                     <a class="staff_icon"><svg  width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                     </a>
                   </li>
-                  <li class="staff_icon-list_item">
+                  <li class="staff_icon-list-item">
                     <a class="staff_icon">
-                    <svg class="staff-icon" width="20" height="20">
+                    <svg  width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                     </a>
                   </li>
-                  <li class="staff_icon-list_item">
+                  <li class="staff_icon-list-item">
                     <a class="staff_icon">
-                    <svg class="staff-icon" width="20" height="20">
+                    <svg  width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                     </a>
                   </li>
-                  <li class="staff_icon-list_item">
+                  <li class="staff_icon-list-item">
                     <a class="staff_icon">
                     <svg class="staff-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin"></use>
@@ -462,48 +446,6 @@
         
       </div>
     </footer>
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button type="button" class="menu-container_clth-btn js-close-menu" >
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="40">
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd">
-          </path>
-        </svg>
-      </button>
-      <ul class="mobile-menu-list">
-        <li>
-          <a class="mobile-menu-list_link" href="./index.html"><div class=""></div>Agencja</a>
-        </li>
-        <li>
-          <a class="mobile-menu-list_link" href="./portfolio.html">Portfolio</a>
-        </li>
-        <li>
-          <a class="mobile-menu-list_link" href="#">Kontakt</a>
-        </li>
-      </ul>
-      <div>
-        <div class="menu-container_mobile-contact">
-          <a class="menu-container_telephone" href="tel:48111111111">+48 111 111 111</a>
-          <a class="menu-container_mail" href="#">info@devstudio.com</a>
-        </div>
-        <ul class="menu-container_social-list">
-        <li><a class="menu-container_social-list-item" href="instagram.com">Instagram</a></li>
-        <li><a class="menu-container_social-list-item" href="twitter.com">Twitter</a></li>
-        <li><a class="menu-container_social-list-item" href="facebook.com">Facebook</a></li>
-        <li><a class="menu-container_social-list-item" href="linkedin.com">LinkedIn</a></li>
-        </ul>
-      </div>
-    </div>
-  
-   
-
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="modal_button" class="close-btn" data-modal-close>
@@ -558,13 +500,6 @@
         </form>
       </div>
     </div>
-    <script
-    defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous">
-    </script>
-    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

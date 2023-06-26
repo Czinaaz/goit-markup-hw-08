@@ -1,12 +1,10 @@
 .main-header {
-    //display: none;
-    padding: 24px 0px 25px;
+    height: 80px;
+    display: flex;
     border-bottom: solid 1px #ECECEC;
     background: var(--background-first);
     &_container {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
     &_logo {
         font-weight: 700;
@@ -18,18 +16,9 @@
         font-size: 26px;
         line-height: 31px;
         letter-spacing: 0.03em;  
-        margin: auto;
     }
     & span {
         color: #2196F3;
-    }
-    &_menu-list {
-        background-color: transparent;
-        border: none;
-        @include tablet {
-            display: none;
-        }
-        
     }
     &_nav {
         display: flex;
@@ -38,9 +27,8 @@
         align-items: center;     
     }
     &_menu {
-        display: none;
+        display: flex;
         margin-left: 93px;
-        margin-right: auto;
     }
     &_nav-item {
         margin-right: 46px;
@@ -73,22 +61,19 @@
         color: var(--focus-color);
         color: var(--hover-color);
     }
-    &_contacts {
-        display: none;
-    }
 
-    &_contact-list {
+    &_contact {
         display: flex;
         margin-left: auto;
         margin-right: 0;
         justify-content: space-between;
         align-items: center;
     }
-    &_contact-list-item {
+    &_contact-item {
         margin-left: 50px;
         
     }
-    &_contact-list-item a {
+    &_contact-item a {
         font-style: normal;
         text-decoration: none;
         color: var(--contact-color);
@@ -103,7 +88,7 @@
     
     }
    
-    &_contact-list-item:hover a {
+    &_contact-item:hover a {
         color: var(--hover-color);
         fill: var(--hover-color);
     }   
