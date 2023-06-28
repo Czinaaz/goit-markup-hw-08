@@ -1,5 +1,8 @@
 .business {
     display: none;
+    @include desktop {
+        display: flex;
+    }
     &_head {
         display: flex;
         justify-content: center;

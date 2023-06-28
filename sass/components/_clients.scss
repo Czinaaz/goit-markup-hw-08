@@ -1,5 +1,11 @@
 .clients {
-    display: none;
+    display: block;
+    @include tablet {
+        display: block;
+    }
+    @include desktop {
+        display: block;
+    }
     &_head {
         display: flex;
         justify-content: center;
@@ -12,13 +18,39 @@
     }
     &_list {
         display: flex;
-        justify-content: center;  
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+        }  
+        @include desktop {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: none;
+            gap: unset;
+        }
     }
     &_list-item {
-        margin-right: 30px;
         cursor: pointer;
         border: 1px solid #AFB1B8;
         fill: #AFB1B8;
+        @include tablet {
+            width: 226px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @include desktop {
+            margin-right: 30px;
+            cursor: pointer;
+            border: 1px solid #AFB1B8;
+            fill: #AFB1B8; 
+        }
     }  
     &_list-item:hover {
         border: 1px solid var(--hover-color);

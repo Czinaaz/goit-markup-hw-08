@@ -1,10 +1,28 @@
 .main-footer {
     background: var(--background-third);
-    display: none;
+    display: block;
     color: $secondaryFontColor;
-    height: 252px;
-    &_container {
+    width: auto;
+    justify-content: center;
+    @include tablet {
         display: flex;
+        
+    }
+    @include desktop {
+        display: flex;
+        height: 252px;
+    }
+    &_container {
+        display: block;
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @include desktop {
+            display: flex;
+        }
     }
    
     & h4 {
@@ -18,9 +36,22 @@
 
     //--Left--// 
     &_left{
-        display: block;
-        margin-top: 60px;
-        margin-right: 70px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+        align-items: center;
+        justify-content: center;
+        @include tablet {
+            display: flex;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        @include desktop {
+            display: block;
+            margin-top: 60px;
+            margin-right: 70px;
+            padding: 0;
+        }
     }
     &_logo {
         font-weight: 700;
@@ -37,8 +68,17 @@
         color: #2196F3;
     }
     &_item {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin-bottom: 9px;
+        @include tablet {
+            display: flex;
+        }
+        @include desktop {
+            display: block;
+            margin-bottom: 9px;
+        }
     }
     &_address {
         margin-top: 20px;  
@@ -68,9 +108,24 @@
 
     //--Center--//
     &_center {
-        display: block;
-        margin-top: 72px;
-        margin-right: 78px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 60px;
+        @include tablet {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: auto;
+        }
+      
+        @include desktop {
+            display: block;
+            margin-top: 72px;
+            margin-right: 78px;
+            padding: 0%;
+        }
     }
     &_icon-list {
         margin-top: 20px;
@@ -102,13 +157,22 @@
 
     //--Right--//
     &_right {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin-top: 72px;
+        
+        @include desktop {
+            display: block;
+            margin-top: 72px;
+        }
     }
     &_newsletter {
         margin-top: 20px;
     }
     &_input {
+        display: block;
+        justify-content: center;
         font-family: inherit;
         height: 50px;
         width: 358px;
@@ -117,14 +181,32 @@
         border: 1px solid #FFFFFF4D; 
         color: #FFFFFF;
         outline: none;
-        margin-right: 10px;
-        padding-left: 10px;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 20px;
+        @include desktop {
+            display: unset;
+            font-family: inherit;
+            height: 50px;
+            width: 358px;
+            border-radius: 4px;
+            background-color: #2F303A;
+            border: 1px solid #FFFFFF4D; 
+            color: #FFFFFF;
+            outline: none;
+            margin-right: 10px;
+            padding-left: 10px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+        }
     }
     &_button {
+        margin-inline: 20%;
+        margin-top: 20px;
+        margin-bottom: 60px;
         height: 50px;
         width: 200px;
         background: $backgroundColor;
@@ -135,6 +217,20 @@
         border: 0;
         justify-content: space-between;
         cursor: pointer;
+        @include desktop {
+            display: unset;
+            margin: unset;
+            height: 50px;
+            width: 200px;
+            background: $backgroundColor;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            color: $secondaryFontColor;
+            fill: $secondaryFontColor;
+            border: 0;
+            justify-content: space-between;
+            cursor: pointer;
+        }
     }
     &_send {
         vertical-align: middle;

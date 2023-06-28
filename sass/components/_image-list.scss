@@ -1,10 +1,23 @@
 .image-list {
-    display: none;
+    display: block;
     flex-wrap:wrap;
     list-style:inside;
-    padding: unset;
-    margin: unset;
+    
+    margin: 10px;
     gap: 30px;
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    @include desktop {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: inside;
+        padding: unset;
+        margin: unset;
+        gap: 30px;
+    }
     
     &_text {
         border-bottom: 1px solid #EEEEEE;
