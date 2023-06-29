@@ -44,10 +44,10 @@ h2 {
     margin: 0 auto;
 
     @include tablet {
-        max-width: 768px;
+        min-width: 768px;
     }
     @include desktop {
-        max-width: 1200px;
+        min-width: 1200px;
     }
 
 }
