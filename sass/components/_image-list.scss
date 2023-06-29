@@ -19,10 +19,8 @@
     }
     
     &_text {
-        border-bottom: 1px solid #EEEEEE;
-        border-left: 1px solid #EEEEEE;
-        border-right: 1px solid #EEEEEE;
-        width: 100%;
+        
+        width: fit-content;
         padding-top: 20px;
         @include tablet {
             width: 354px;
@@ -53,9 +51,12 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 95%;
+        width: fit-content;
         margin-left: auto;
         margin-right: auto;
+        border-bottom: 1px solid #EEEEEE;
+        border-left: 1px solid #EEEEEE;
+        border-right: 1px solid #EEEEEE;
         @include tablet {
             display: flex;
             flex-direction: column;
