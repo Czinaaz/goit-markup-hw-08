@@ -34,11 +34,7 @@
     &_list-item {
         @include tablet {
         flex-basis: calc((100% - 3 * 30px) / 4);
-        @include desktop {
-            margin-right: 30px;
         }
-        }
-       
          & p {
         justify-content: center;
         font-style: normal;
