@@ -48,15 +48,12 @@
             width: 354px;
             margin: auto;
             gap: 30px;
-            align-items: center;
-            justify-content: center;
-            
         }
-         
         @include desktop {
             display: flex;
             flex-direction: column;
-            margin-right: 10px;
+            width: 100%;
+            gap: 0;
         }
     }
     &_text {
