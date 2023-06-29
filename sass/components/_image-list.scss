@@ -9,6 +9,8 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        flex-basis: calc((100% - 10px) / 6);
+          
     }
     @include desktop {
         display: flex;

@@ -3,7 +3,9 @@
     
     @include tablet {
         display: flex;
-       
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
         
     }
     @include desktop {
@@ -15,13 +17,13 @@
         display: block;
         align-items: center;
         margin: 10px;
-        
-        @include tablet {
+       @include tablet {
             display: flex;
-            width: 50%;
-            flex-wrap: wrap;
             flex-direction: row;
-        }
+            flex-wrap: wrap;
+            width: 50%;
+       }
+        
         @include desktop {
             display: flex; 
             flex-wrap: unset; 
@@ -32,6 +34,7 @@
     &_list-item {
         
         margin-right: 30px;
+       
          & p {
         justify-content: center;
         font-style: normal;
@@ -41,7 +44,7 @@
         color: #757575;
         max-width: fit-content;
         letter-spacing: 0.03em;
-    }
+        }
     & h4 {
         margin-bottom: 10px;
         font-style: normal;
@@ -50,7 +53,11 @@
         line-height: 16px;
         letter-spacing: 0.03em;
         text-transform: uppercase;  
-    }
+        }
+        @include tablet {
+            flex-basis: calc((100% - 3 * 30px) / 2);
+        }
+       
     }
    
     &_list-pic {
