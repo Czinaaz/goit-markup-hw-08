@@ -185,6 +185,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 20px;
+        padding-left: 10px;
         @include desktop {
             display: unset;
             font-family: inherit;
