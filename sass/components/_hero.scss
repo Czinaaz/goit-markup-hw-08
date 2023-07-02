@@ -1,21 +1,27 @@
 .hero {
     display: block;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     font-size: 16px;
     line-height: 1.14;
     text-decoration: none;
     background: url("/goit-markup-hw-08/images/background-mini.jpg");
     color: $secondaryFontColor;
+    background-size: cover;
     margin: auto;
     @include tablet {
         display: block;
         background: url("/goit-markup-hw-08/images/background-middle.jpg");
+        background-size: cover;
         
     }
     @include desktop {
         display: block;
         background: url("/goit-markup-hw-04/images/background.jpg");
+        max-width: 1600px;
+        background-size: cover;
     }
     & h1 {
         font-size: 26px;
@@ -54,4 +60,19 @@
             margin-bottom: 200px;
         }
     }
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/goit-markup-hw-08/images/background-mini@2x.jpg");
+    @include tablet {
+        background-image: url("/goit-markup-hw-08/images/background-middle@2x.jpg");
+    }
+    @include desktop {
+        background-image: url("/goit-markup-hw-08/images/background@2x.jpg");
+    }
+  }
+
 }
